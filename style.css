@@ -1,6 +1,8 @@
 :root {
     --PRIMARY-BG: rgb(0, 195, 255);
-    --SECONDARY-BG: rgb(0, 152, 199);
+    --SECONDARY-BG: rgb(0, 141, 184);
+    --LINK-CLR: rgb(255, 215, 38);
+    --BR-RADIUS: 0.45rem;
 }
 
 * {
@@ -15,8 +17,8 @@ body > * {
 
 header {
     background-color: var(--PRIMARY-BG);
-    border: 5px solid rgb(0, 152, 199);
-    border-radius: 0.5rem;
+    border: 5px solid var(--SECONDARY-BG);
+    border-radius: 0.45rem;
     text-align: center;
 }
 
@@ -24,4 +26,18 @@ header h1 {
     color: white;
     font-size: 2.5rem;
     padding: 2rem 0;
+    font-weight: 500;
+}
+
+nav {
+    background-color: rgb(0, 141, 184);
+    border-radius: var(--BR-RADIUS);
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav ul li {
+    color: var(--LINK-CLR);
 }
