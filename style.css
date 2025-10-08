@@ -32,16 +32,25 @@ header h1 {
 nav {
     background-color: rgb(0, 141, 184);
     border-radius: var(--BR-RADIUS);
+    padding: 0.75rem;
 }
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+nav li {
+    padding: 0.75rem;
+    border-radius: var(--BR-RADIUS);
 }
 
 nav li a {
     color: var(--LINK-CLR);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
