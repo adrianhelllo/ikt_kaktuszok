@@ -15,7 +15,7 @@ body > * {
     margin: 0.75rem;
 }
 
-header, footer {
+header, footer, article {
     background-color: var(--PRIMARY-BG);
     border: 5px solid var(--SECONDARY-BG);
     border-radius: 0.45rem;
@@ -75,6 +75,36 @@ main img {
     object-fit: cover;
     border: 5px solid rgb(0, 195, 255);
     border-radius: var(--BR-RADIUS);
+}
+
+.main-article {
+    grid-template-columns: 1fr 2fr;
+}
+
+article {
+    color: black;
+    text-align: left;
+    padding: 1.5rem 1rem 0.75rem 0;
+}
+
+article ol {
+    padding-left: 3rem;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+article ol li {
+    margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    main img {
+        max-height: 400px;
+    }
+
+    .main-article {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 476px) {
