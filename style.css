@@ -34,10 +34,21 @@ nav {
     border-radius: var(--BR-RADIUS);
 }
 
-nav li {
+nav ul {
     list-style-type: none;
 }
 
-nav ul li {
+nav li a {
     color: var(--LINK-CLR);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+nav li:hover {
+    background-color: var(--PRIMARY-BG);
+}
+
+nav li:hover a {
+    text-decoration: underline;
 }
